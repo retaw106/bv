@@ -3,7 +3,7 @@ name: Alpha Build
 on:
   push:
     branches:
-      - develop
+      - my
 
 jobs:
   build-alpha:
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: develop
+          ref: my
           fetch-depth: 0
           submodules: 'true'
 
